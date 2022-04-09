@@ -14,7 +14,6 @@ const googleProvider = new GoogleAuthProvider();
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
-  console.log(user);
 
   const signInWithGoogle = () => {
     signInWithPopup(auth, googleProvider)
